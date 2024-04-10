@@ -2,6 +2,8 @@ const inreamentBtn = document.querySelector(".increament");
 const decreamentBtn = document.querySelector(".decreament");
 const valDiv = document.querySelector(".val");
 const alignmentSelect = document.getElementById("alignmentSelect");
+const buttons = document.querySelectorAll(".valbtn");
+console.log("val btn ", buttons);
 let val = 0;
 
 const svgs = {
@@ -22,18 +24,18 @@ const svgs = {
 };
 
 function updateVal(value) {
-  valDiv.innerHTML = `${value} %`;
+  val = Math.max(0, Math.min(100, value));
+  valDiv.innerHTML = `${val} %`;
+  updateButtonsState();
 }
 
 inreamentBtn.addEventListener("click", () => {
-  val = val === 100 ? 100 : val + 1;
-  updateVal(val);
+  updateVal(val + 1);
   updateButtonsState();
 });
 
 decreamentBtn.addEventListener("click", () => {
-  val = val === 0 ? 0 : val - 1;
-  updateVal(val);
+  updateVal(val - 1);
   updateButtonsState();
 });
 
@@ -43,6 +45,21 @@ alignmentSelect.addEventListener("change", () => {
   document.querySelector(".box").classList.add(selectedValue);
   updateSVGs(selectedValue);
   updateButtonsState();
+});
+
+function updateValueFromButton(buttonValue) {
+    val = parseInt(buttonValue, 10); 
+    console.log("val : ", buttonValue);
+    updateVal(val);
+    updateButtonsState();
+}
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      console.log("insdw");
+        updateValueFromButton(button.textContent);
+        updateVal(val);
+    });
 });
 
 function updateSVGs(selectedValue) {

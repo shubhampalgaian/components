@@ -39,13 +39,15 @@
   width: 100px;
   border-radius: 50%;
   border: none;
+  background: red;
   cursor: pointer;
 }
 
 .btn:not([disabled]):hover {
-  background: lightseagreen;
+  background: rgb(0, 3, 3);
 }
 
 .btn[disabled] {
   cursor: not-allowed;
+  background: #6e5d5d;
 }
