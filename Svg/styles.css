@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+}
+
+.component .svgbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background: lightcoral;
+}
+
+.component .sliderbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background: lightgreen;
+}
+
+.component .sliderbox .intensitybox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: lightgreen;
+    margin-bottom: 1rem;
+}
+
+.component .sliderbox .intensitybox input {
+    width: 200px;
+}
+
+.component .sliderbox .colorbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: lightgreen;
+    margin-bottom: 1rem;
+}
+
+.component .sliderbox .colorbox input {
+    width: 200px;
+}

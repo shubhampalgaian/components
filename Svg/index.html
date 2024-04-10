@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="component">
+    <div class="svgbox">
+      <svg id="mySVG" width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30.0625 48.2051C30.0625 52.9681 31.9546 57.536 35.3226 60.904C38.6905 64.272 43.2585 66.1641 48.0215 66.1641C52.7845 66.1641 57.3524 64.272 60.7204 60.904C64.0884 57.536 65.9805 52.9681 65.9805 48.2051C65.9805 43.4421 64.0884 38.8741 60.7204 35.5062C57.3524 32.1382 52.7845 30.2461 48.0215 30.2461C43.2585 30.2461 38.6905 32.1382 35.3226 35.5062C31.9546 38.8741 30.0625 43.4421 30.0625 48.2051Z" stroke="white" stroke-width="2.73661" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M65.9805 48.2051C65.9805 45.8467 65.5159 43.5114 64.6134 41.3325C63.7109 39.1536 62.388 37.1738 60.7204 35.5062C59.0528 33.8385 57.073 32.5157 54.8941 31.6131C52.7152 30.7106 50.3799 30.2461 48.0215 30.2461L48.0215 48.2051L65.9805 48.2051Z" fill="#FFF730"/>
+        <path d="M48.0195 3.30469V18.2705" stroke="white" stroke-width="2.73661" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M48.0195 78.1367V93.1025" stroke="white" stroke-width="2.73661" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M92.917 48.207H77.9512" stroke="white" stroke-width="2.73661" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18.0889 48.207H3.12305" stroke="white" stroke-width="2.73661" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M80.9453 15.2852L68.9727 27.2578" stroke="white" stroke-width="2.73661" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M27.0645 69.1602L15.0918 81.1328" stroke="white" stroke-width="2.73661" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M80.9453 81.1328L68.9727 69.1602" stroke="white" stroke-width="2.73661" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M27.0645 27.2578L15.0918 15.2852" stroke="white" stroke-width="2.73661" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>        
+    </div>
+    <div class="sliderbox">
+      <div class="intensitybox">
+        <label for="strokeWidth">Stroke Width:</label>
+        <input type="range" name="strokeWidth" id="strokeWidth" min="1" max="10" value="2">
+      </div>
+      <div class="colorbox">
+        <label for="fillColor">Fill Color:</label>
+        <input type="color" name="fillColor" id="fillColor" value="#FF0000">
+        <label for="strokeColor">Stroke Color:</label>
+        <input type="color" name="strokeColor" id="strokeColor" value="#000000">
+        <label for="multiSelect">Multiple Selection:</label>
+        <input type="checkbox" name="multiSelect" id="multiSelect">
+      </div>
+    </div>
+    
+  </div>
+</body>
+
+</html>
